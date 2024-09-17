@@ -8,7 +8,7 @@ function NavBar() {
 
   return (
     <div  
-    className="max-w-screen-sm overflow-x-hidden w-full shadow-md bg-gray-900 text-white fixed top-0 left-0 z-50">
+    className=" w-full shadow-md bg-gray-900 text-white fixed top-0 left-0 z-50">
       <nav className="flex items-center justify-between p-4">
         <div className="navbar-brand flex items-center">
           <Link href="/" className="flex items-center">
