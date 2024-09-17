@@ -7,7 +7,8 @@ function NavBar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full shadow-md bg-gray-900 text-white fixed top-0 left-0 z-50">
+    <div  style={{ width: '100% !important' }}
+    className="w-full shadow-md bg-gray-900 text-white fixed top-0 left-0 z-50">
       <nav className="flex items-center justify-between p-4">
         <div className="navbar-brand flex items-center">
           <Link href="/" className="flex items-center">
@@ -38,13 +39,11 @@ function NavBar() {
             </svg>
           </button>
         </div>
-
-        {/* Nav Links */}
-        <ul
-          className={`lg:flex lg:items-center lg:space-x-4 lg:space-y-0 bg-gray-900 lg:bg-transparent space-y-4 lg:pt-0 pt-6 fixed lg:relative top-16 lg:top-auto left-0 w-full lg:w-auto transition-transform transform ${
-            isOpen ? 'translate-x-0' : '-translate-x-full'
-          } lg:translate-x-0 z-40`}
-        >
+  <ul
+          className={`lg:flex lg:items-center lg:space-x-4 lg:space-y-0 space-y-4 lg:pt-0 pt-6 fixed inset-0 bg-gray-900 lg:bg-transparent lg:relative lg:flex-row lg:top-auto lg:left-auto top-16 left-0 w-full lg:w-auto transition-transform transform ${
+           isOpen ? 'translate-x-0' : '-translate-x-full'
+          } z-40`} >
+        
           <li className="px-4 py-2 lg:px-2">
             <Link href="/event" className="hover:bg-gray-800 hover:p-2 hover:rounded transition text-white">
               Events
