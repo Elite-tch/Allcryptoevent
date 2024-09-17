@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 
 function OurTeam() {
@@ -7,9 +8,10 @@ function OurTeam() {
  <h1 className="text-xl text-center font-bold" >Our Team </h1>
 <article className="rounded-xl border border-gray-700 bg-gray-800 p-4 mt-6">
   <div className="flex items-center gap-4 flex-col">
-    <img
+    <Image width={1000}
+      height={1000}
       alt=""
-      src="bgc.jpg"
+      src={"/bgc.jpg"}
       className="size-8 h-32 w-32 rounded-full object-cover"
     />
 
@@ -32,9 +34,10 @@ function OurTeam() {
 
   <article className="rounded-xl border border-gray-700 bg-gray-800 p-4  mt-6">
   <div className="flex items-center gap-4 flex-col">
-    <img
+    <Image width={1000}
+      height={1000}
       alt=""
-      src="bgc.jpg"
+      src={"/bgc.jpg"}
       className="size-8 h-32 w-32 rounded-full object-cover"
     />
 
@@ -57,9 +60,10 @@ function OurTeam() {
   
 <article className="rounded-xl border border-gray-700 bg-gray-800 p-4 mt-6">
   <div className="flex items-center gap-4 flex-col">
-    <img
+    <Image width={1000}
+      height={1000}
       alt=""
-      src="bgc.jpg"
+      src={"/bgc.jpg"}
       className="size-8 h-32 w-32 rounded-full object-cover"
     />
 
