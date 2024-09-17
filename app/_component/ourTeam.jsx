@@ -6,6 +6,7 @@ function OurTeam() {
    return(
 <div className="px-8 py-8 ">
  <h1 className="text-xl text-center font-bold" >Our Team </h1>
+  <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2 md:gap-6 lg:gap-8">
 <article className="rounded-xl border border-gray-700 bg-gray-800 p-4 mt-6">
   <div className="flex items-center gap-4 flex-col">
     <Image width={1000}
@@ -83,7 +84,7 @@ function OurTeam() {
 </div>
  </div>
       </div></article>
-  
+  </div>
   
   
 </div>

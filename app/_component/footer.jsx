@@ -23,9 +23,9 @@ const newDate = new Date();
       </ul>
      <div
       className="mt-6 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between lg:mt-8"
-    >
+    > </div>
          <p className=" text-gray-500 text-center">&copy; {year}. Elite-tech. All rights reserved.</p>
-</div>
+
         
        
 
