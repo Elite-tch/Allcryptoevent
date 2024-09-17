@@ -17,7 +17,7 @@ function Review() {
       </h1>
 
       <p className="mx-auto mt-4 max-w-xl text-gray-500 sm:text-xl/relaxed">
-        We value the experiences of everyone who interacts with our platform. Whether you're attending an event or promoting one, your feedback helps us improve and grow.
+        We value the experiences of everyone who interacts with our platform. Whether you are attending an event or promoting one, your feedback helps us improve and grow.
       </p>
       <div className="mt-8 flex  justify-center gap-4 flex-wrap">
         <Link

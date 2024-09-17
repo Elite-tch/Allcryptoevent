@@ -20,7 +20,7 @@ function TopRated() {
       className=" img"
     />
   <div className="p-4 sm:p-6 mx-auto ">
-      <h3 className="text-lg font-medium">Unlocking ICPC's Developers Ecosystem</h3> 
+      <h3 className="text-lg font-medium">Unlocking ICPCs Developers Ecosystem</h3> 
     <div className="mt-4 flex items-center  justify-center sm:gap-4 gap-4 text-xs text-center">
       <div className=" flex  flex-col justify-center sm:shrink-0 items-center ">
           <LocationIcon />
