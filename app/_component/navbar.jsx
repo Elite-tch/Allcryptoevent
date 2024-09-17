@@ -16,7 +16,7 @@ function NavBar() {
           </Link>
         </div>
 
-        
+        {/* Mobile menu button */}
         <div className="block lg:hidden">
           <button
             onClick={toggleMenu}
@@ -39,11 +39,11 @@ function NavBar() {
           </button>
         </div>
 
-    
+        {/* Nav Links */}
         <ul
-          className={`lg:flex lg:items-center lg:space-x-4 lg:space-y-0 space-y-4 lg:pt-0 pt-6 fixed inset-0 bg-gray-900 lg:bg-transparent lg:relative lg:flex-row lg:top-auto lg:left-auto top-16 left-0 w-full lg:w-auto transition-transform transform ${
+          className={`lg:flex lg:items-center lg:space-x-4 lg:space-y-0 bg-gray-900 lg:bg-transparent space-y-4 lg:pt-0 pt-6 fixed lg:relative top-16 lg:top-auto left-0 w-full lg:w-auto transition-transform transform ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
-          } z-40`}
+          } lg:translate-x-0 z-40`}
         >
           <li className="px-4 py-2 lg:px-2">
             <Link href="/event" className="hover:bg-gray-800 hover:p-2 hover:rounded transition text-white">
@@ -65,27 +65,25 @@ function NavBar() {
               Blogs
             </Link>
           </li>
-        <li className="px-4 py-2 lg:px-2">
-          <Link
-            href="/login"
-            className="group relative inline-block text-sm font-medium text-white focus:outline-none active:text-indigo-500"
-          >
-            <span className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-indigo-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0 hover:border-indigo-500"></span>
-            <span className="relative block border border-current bg-gray-800 px-3 py-2">Log In</span>
-          </Link>
+          <li className="px-4 py-2 lg:px-2">
+            <Link
+              href="/login"
+              className="group relative inline-block text-sm font-medium text-white focus:outline-none active:text-indigo-500"
+            >
+              <span className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-indigo-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0 hover:border-indigo-500"></span>
+              <span className="relative block border border-current bg-gray-800 px-3 py-2">Log In</span>
+            </Link>
           </li>
-<li className="px-4 py-2 lg:px-2">
-          <Link
-            href="/login"
-            className="group relative inline-block text-sm font-medium text-white focus:outline-none active:text-indigo-500"
-          >
-            <span className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-indigo-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0 hover:border-indigo-500"></span>
-            <span className="relative block border border-current bg-gray-800 px-3 py-2">Sign up</span>
-          </Link>
+          <li className="px-4 py-2 lg:px-2">
+            <Link
+              href="/signup"
+              className="group relative inline-block text-sm font-medium text-white focus:outline-none active:text-indigo-500"
+            >
+              <span className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-indigo-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0 hover:border-indigo-500"></span>
+              <span className="relative block border border-current bg-gray-800 px-3 py-2">Sign up</span>
+            </Link>
           </li>
-          
-          </ul>
-        
+        </ul>
       </nav>
     </div>
   );
