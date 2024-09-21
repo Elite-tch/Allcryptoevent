@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 const states = [
   { id: 1, name: 'Event in Lagos', href: '/event/events/lagos', img : "/img3.jpg" , btn:" View Events", paragraph:"Join us in Lagos for an immersive tech experience. "},
-  { id: 2, name: 'Event in Abuja',img : "/img4.jpg",btn:" View Events", href: '/', paragraph: " Explore cutting-edge blockchain innovations in Abuja." },
-  { id: 3, name: 'Event in Enugu', img : "/img5.jpg", btn:" View Events", href: '/' , paragraph:"Engage with crypto enthusiasts at Enugu’s premier event. "},
-  { id: 4, name: 'Event in Kaduna',img : "/img6.jpg",btn:" View Events", href: '/', paragraph: "Discover the future of Web3 in Kaduna. " },
+  { id: 2, name: 'Event in Abuja',img : "/img4.jpg",btn:" View Events", href: '/event/events/abuja', paragraph: " Explore cutting-edge blockchain innovations in Abuja." },
+  { id: 3, name: 'Event in Enugu', img : "/img5.jpg", btn:" View Events", href: '/event/events/enugu' , paragraph:"Engage with crypto enthusiasts at Enugu’s premier event. "},
+  { id: 4, name: 'Event in Kaduna',img : "/img6.jpg",btn:" View Events", href: '/event/events/kaduna', paragraph: "Discover the future of Web3 in Kaduna. " },
   { id: 5, name: 'Event in Rivers',img : "/img7.jpg",btn:" View Events", href: '/', paragraph: " Be a part of Rivers’ most exciting crypto gathering." },
   { id: 6, name: 'Event in Portharcout', btn:" View Events", img : "/img8.jpg", href: '/' ,  paragraph:" Meet industry leaders at the Portharcourt tech summit."}
 ];
