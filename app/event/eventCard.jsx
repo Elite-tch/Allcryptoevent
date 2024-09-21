@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const states = [
   { id: 1, name: 'Event in Lagos', href: '/', img : "/img3.jpg" , btn:" View Events", paragraph:"Join us in Lagos for an immersive tech experience. "},
@@ -26,8 +27,8 @@ function EventCard() {
      <div className=" grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 md:gap-6 lg:gap-8">
  {states.map(state => (
 <article key={state.id}  className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-  <img
-    alt=""
+  <Image
+    alt="" width={1000} height={1000} 
     src={state.img}
     className="absolute inset-0 h-full w-full object-cover "
   />
