@@ -17,7 +17,7 @@ function EventPage() {
       </h1>
 
       <p className=" text-white mt-4 text-sm md:text-xl ">
-        Discover the latest innovations, connect with industry leaders, and explore groundbreaking opportunities in the world of cryptocurrency. Whether you're an enthusiast or a professional, our events offer something for everyone.
+        Discover the latest innovations, connect with industry leaders, and explore groundbreaking opportunities in the world of cryptocurrency. Whether you are an enthusiast or a professional, our events offer something for everyone.
       </p>
        <div className="mt-8 flex  justify-center gap-4">
         <Link
