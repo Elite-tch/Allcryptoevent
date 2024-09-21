@@ -2,8 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 const states = [
-  { id: 1, name: 'Event in Lagos', href: '/', img : "/img3.jpg" , btn:" View Events", paragraph:"Join us in Lagos for an immersive tech experience. "},
+  { id: 1, name: 'Event in Lagos', href: '/event/events/lagos', img : "/img3.jpg" , btn:" View Events", paragraph:"Join us in Lagos for an immersive tech experience. "},
   { id: 2, name: 'Event in Abuja',img : "/img4.jpg",btn:" View Events", href: '/', paragraph: " Explore cutting-edge blockchain innovations in Abuja." },
   { id: 3, name: 'Event in Enugu', img : "/img5.jpg", btn:" View Events", href: '/' , paragraph:"Engage with crypto enthusiasts at Enugu’s premier event. "},
   { id: 4, name: 'Event in Kaduna',img : "/img6.jpg",btn:" View Events", href: '/', paragraph: "Discover the future of Web3 in Kaduna. " },
