@@ -1,3 +1,6 @@
+"use client";
+import Image from 'next/image';
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -12,8 +15,8 @@ function NavBar() {
       <nav className="flex items-center justify-between p-4">
         <div className="navbar-brand flex items-center">
           <Link href="/" className="flex items-center">
-            <span className="bg-indigo-600 h-9 w-9 block rounded-full"></span>
-            <h1 className="text-2xl text-white px-2 font-bold">ACEHub</h1>
+            <Image alt="logo" src="/logocc1.png" width={80} height={80} />
+            <h1 className="text-2xl text-white  font-bold">ACEHub</h1>
           </Link>
         </div>
 
@@ -89,3 +92,4 @@ function NavBar() {
 }
 
 export default NavBar;
+    
