@@ -28,7 +28,7 @@ export default function AbujaPage() {
       </h1>
 
       <p className="mt-2  text-gray-700 text-center text-sm md:text-xl pb-2">
-        From conferences to entertainment, find out what's happening in Abuja!
+        From conferences to entertainment, find out what is happening in Abuja
       </p>
 
       
