@@ -5,17 +5,17 @@ import Image from 'next/image';
 
 
 const events= [
-  { id: 1, name: 'Afro Token Conference ', href: '/', img : "/img13.jpg" , btn:" View Details", para1:"Location : Spoke Resort Munyonyo ", para3:"Date : 14th sept 2024 ", para4:"Time : 11:00Am"},
+  { id: 1, name: 'Afro Token Conference ', href: '/', img : "/img13.jpg" , btn:" Join Event ", btn2: "Open For Partners", href2:"/", para1:"Location : Spoke Resort Munyonyo ", para3:"Date : 14th sept 2024 ", para4:"Time : 11:00Am"},
 
-  { id: 2, name: ' Catalysing Conversation', href: '/ ', img : "/img12.jpg" , btn:" View Details", para1:" Location : Lagos State ", para3:" Date : 3rd Oct 2024 ", para4:" Time : 9:00Am "},
+  { id: 2, name: ' Catalysing Conversation', href: '/ ', img : "/img12.jpg" , btn:" Join Event ", btn2: "Closed to Partners", href2:"/", para1:" Location : Lagos State ", para3:" Date : 3rd Oct 2024 ", para4:" Time : 9:00Am "},
 
-  { id: 3, name: 'Career Connect  Expo 2024', href: '/ ', img : "/img9.jpg" , btn:" View Details", para1:" Location : MAAUM HOTORO Kano ",  para3:" Date : 3rd Oct 2024  ", para4:" Time : 10:00Am  "},
+  { id: 3, name: 'Career Connect  Expo 2024', href: '/ ', img : "/img9.jpg" , btn:" Join Event ", btn2: "Open For Partners", href2:"/", para1:" Location : MAAUM HOTORO Kano ",  para3:" Date : 3rd Oct 2024  ", para4:" Time : 10:00Am  "},
   
-  { id: 4, name: 'Nigeria Innovation Summit 9.0 ', href:'/ ', img : "/img10.jpg" , btn:" View Details", para1:"Location : Shall Hall, Muson Center Lagos", para3:" Date : 2nd Oct 2024 ", para4:" Time : 10:00Am  "},
+  { id: 4, name: 'Nigeria Innovation Summit 9.0 ', href:'/ ', img : "/img10.jpg" , btn:" Join Event ", btn2: "Open For Partners", href2:"/", para1:"Location : Shall Hall, Muson Center Lagos", para3:" Date : 2nd Oct 2024 ", para4:" Time : 10:00Am  "},
   
-  { id: 5, name: 'Digital Learning  Festival', href: '/ ', img : "/img7.jpg" , btn:" View Details", para1:" Location : National Stadium Surulere",  para3:" Date : 18th Sept 2024 ", para4:" Time : 10:00Am "},
+  { id: 5, name: 'Digital Learning  Festival', href: '/ ', img : "/img7.jpg" , btn:" Join Event ", btn2: "Open For Partners", href2:"/", para1:" Location : National Stadium Surulere",  para3:" Date : 18th Sept 2024 ", para4:" Time : 10:00Am "},
   
-  { id: 6, name: 'Young Innovators Nigeria', href:  '/ ', img : "/img3.jpg" , btn:" View Details", para1:" Location : Cosmopolitan University Abuja",  para3:" Date : 16th - 17th Oct 2024  ", para4:" Time : 10:00Am "},
+  { id: 6, name: 'Young Innovators Nigeria', href:  '/ ', img : "/img3.jpg" , btn:" Join Event ", btn2: "Closed to Partners", href2:"/", para1:" Location : Cosmopolitan University Abuja",  para3:" Date : 16th - 17th Oct 2024  ", para4:" Time : 10:00Am "},
   ]
 
 
@@ -55,12 +55,22 @@ export default function KadunaPage() {
   </p>
 </span>
     
-      <Link href={event.href }
-        className=" w-full rounded text-indigo-700 mt-4  hover:text-black py-3 text-sm font-medium transition hover:scale-105 "
-      >
-        {event.btn }
-      </Link>
-        
+  <span className=" flex justify-between items-center gap-4">  
+    <Link href={event.href }
+      className=" w-full rounded text-indigo-700 mt-4  hover:text-white hover:bg-indigo-600 py-3 text-sm font-medium transition hover:scale-105 shadow-xl text-center "
+    >
+      {event.btn }
+    </Link>
+  <Link href={event.href2 }
+      className=" w-full rounded bg-indigo-600 text-white hover:bg-white mt-4  hover:text-indigo-700 py-3 text-sm font-medium transition hover:scale-105 shadow-xl text-center"
+    >
+      {event.btn2 }
+    </Link>
+
+
+
+
+    </span>  
 
   
    </article> ))}
